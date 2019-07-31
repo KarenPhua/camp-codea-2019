@@ -1,38 +1,20 @@
-var currentText = 'O';
-let active = true;
-
 function cellClick(args) {
-    if (!active)
-        return;
-
-    const cell = args.target;
+    //Check if active, if not, return
     
-    let existingText = getCellValueByCell(cell)
-    if(existingText == 'X' || existingText == 'O')
-        return //This cell is already clicked and nothing should change
-    if (currentText == 'X')
-        setCellByCell(cell, 'O');
-    else
-        setCellByCell(cell, 'X');
-
-    currentText = getCellValueByCell(cell);
-
-    let winner = checkWinner();
-    if (winner != EMPTY_CELL) {
-        setStatus(winner + " won!");
-        active = false;
-    }
-
-    //Check if the game is over
-    if(!hasEmptyCell()){
-        setStatus("It's a tie");
-        active = false;
-    }
+    //If active, check if current cell is empty, if not, return
+    
+    //if cell is empty, set the cell with current user's symbol
+    
+    //Check winner, if found, update status and return
+    
+    //If no winner, check if the game is over, if it's over, update status and return 
+    
+    //Set current user to next user
 }
 
 function resetGame() {
-    setBoard(EMPTY_CELL);
-
-    setStatus("Ready!");
-    active= true;
+    //Set board cells to empty
+    
+    //Update game status
+    
 }
