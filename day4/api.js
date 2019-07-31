@@ -142,11 +142,5 @@ function dumpBoard() {
 }
 
 function hasEmptyCell(){
-    for (i=0; i < 3; i++) {
-        for (let j=0; j < 3; j++) {
-            if(getCellValue(i,j) == EMPTY_CELL)
-                return true
-        }
-    }
-    return false
+    //TODO
 }
