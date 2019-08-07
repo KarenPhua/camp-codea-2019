@@ -3,8 +3,6 @@
 //
 
 const EMPTY_CELL = undefined;
-const ROWS=3;
-const COLS=3;
 let cells = [ EMPTY_CELL, EMPTY_CELL, EMPTY_CELL,
               EMPTY_CELL, EMPTY_CELL, EMPTY_CELL,
               EMPTY_CELL, EMPTY_CELL, EMPTY_CELL ]
