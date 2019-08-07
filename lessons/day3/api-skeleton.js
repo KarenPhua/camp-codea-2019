@@ -67,21 +67,13 @@ function checkBackwardDiagonal() {
 }
 
 function checkWinner() {
-    let w = EMPTY_CELL;
 
     let r = checkRows();
     let c = checkColumns();
     let f = checkForwardDiagonal();
     let b = checkBackwardDiagonal();
 
-    if (r != EMPTY_CELL)
-        w = r;
-    else if (c != EMPTY_CELL)
-        w = c;
-    else if (f != EMPTY_CELL)
-        w = f;
-    else if (b != EMPTY_CELL)
-        w = b;
+    let w = r || c || f || b || EMPTY_CELL;
 
     if (w == EMPTY_CELL)
         console.log("No winner");
